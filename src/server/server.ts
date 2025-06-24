@@ -49,7 +49,8 @@ server.bindAsync(
   ServerCredentials.createInsecure(),
   (error, port) => {
     if (error) {
-      console.log(`Error ${error.name} occurred : ${error.message}`);
+      console.error(`Error ${error.name} occurred : ${error.message}`);
+      return;
     }
 
     console.log(`Server is running at port ${port}`);

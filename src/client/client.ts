@@ -19,12 +19,13 @@ client.login(
   loginRequest,
   (err: ServiceError | null, response: LoginResult) => {
     if (err) {
-      console.log("Error Details : ");
-      console.log(`Error Code : ${err.code}`);
-      console.log(`Error Name : ${err.name}`);
-      console.log(`Error Details: ${err.details}`);
+      console.error("gRPC call failed with error:");
+      console.error(`  Code: ${err.code}`);
+      console.error(`  Name: ${err.name}`);
+      console.error(`  Details: ${err.details}`);
+      return;
     }
 
-    console.log(`Response: ${JSON.stringify(response)}`);
+    console.log("Login Response:", JSON.stringify(response, null, 2));
   }
 );
