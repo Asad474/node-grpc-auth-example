@@ -28,7 +28,7 @@
 
 ---
 
-## 🔮 Code Generation Command with Explanation and References
+## 🔮 Code Generation Command with Explanation
 
 ```bash
 npx protoc \
