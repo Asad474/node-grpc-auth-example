@@ -39,9 +39,11 @@ npx protoc \
     # esModuleInterop=true          -> enable ES module/CommonJS compatibility
   ./protos/auth.proto                  # Path to your .proto file
 
-# References:
-# gRPC: https://grpc.io/
-# Protocol Buffers Docs: https://developers.google.com/protocol-buffers
-# ts-proto GitHub: https://github.com/stephenh/ts-proto
-# @grpc/grpc-js npm: https://www.npmjs.com/package/@grpc/grpc-js
 ```
+
+## 🔗 References
+
+- **[gRPC Official Site](https://grpc.io/)** — Explore gRPC’s features and documentation.
+- **[Protocol Buffers Documentation](https://developers.google.com/protocol-buffers)** — Learn about the efficient binary serialization format.
+- **[ts-proto GitHub Repository](https://github.com/stephenh/ts-proto)** — TypeScript code generator for protobuf with grpc-js support.
+- **[@grpc/grpc-js npm Package](https://www.npmjs.com/package/@grpc/grpc-js)** — The Node.js gRPC implementation based on HTTP/2.
